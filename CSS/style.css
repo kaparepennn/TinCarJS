@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Oculta cualquier desbordamiento de la animación */
+    background-color: #f0f0f0; /* Un color de fondo de respaldo */
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite la interacción con el contenido debajo */
+    z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+.bubble, .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.shape {
+    border-radius: 0; /* Los óvalos y rectángulos no tendrán bordes redondeados */
+}
